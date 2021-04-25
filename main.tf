@@ -1,7 +1,7 @@
 
 provider "aws" {
   region  = "ap-south-1"
-  profile = "newakash"
+  profile = <IAMName>
 }
 
 terraform {
@@ -16,9 +16,9 @@ terraform {
 
 
 provider "openstack" {
-  user_name   = "admin"
-  tenant_name = "admin"
-  password    = "saddahaq"
+  user_name   = <Username>
+  tenant_name = <TenantName>
+  password    = <YourPassword>
   auth_url    = "http://192.168.0.181:5000/v3"
   region      = "RegionOne"
 }
